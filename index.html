@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap EBAC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #ffff;
+        } 
+
+        .nav-link {
+            text-align: center;
+        }
+
+        .card-img-top {
+        height: 400px; 
+        object-fit: cover; 
+        }
+
+        section {
+            padding-top: 50px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: #ffff;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+        <div class="container">
+            <h1>Esoterismo contextualizado</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#postagens">Postagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cadastro">Cadastro</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="./img/1.jpg" />
+                <div class="carousel-caption">
+                    <h2>
+                        Pirâmides de Gizé - Egito
+                    </h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./img/2.jpg" />
+                <div class="carousel-caption">
+                    <h2>
+                        Pirâmides do Egito
+                    </h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./img/3.jpg" />
+                <div class="carousel-caption">
+                    <h2>
+                        Jardins suspensos da Babilônia
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+</div>
+<div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div class="container">
+        <section id="inicio">
+            <h2>Sobre</h2>
+            <p>
+                Bem-vindo ao nosso blog esotérico, um espaço dedicado à exploração dos mistérios das divindades e personalidades antigas que moldaram as tradições espirituais e filosóficas ao longo da história. Aqui, mergulhamos nos relatos fascinantes de deuses como Thoth, o sábio egípcio da escrita e da sabedoria, e Hermes Trismegistus, a figura enigmática que une as tradições gregas e egípcias no hermetismo. Cada postagem revela os aspectos ocultos e as conexões profundas entre essas entidades, oferecendo uma nova perspectiva sobre como suas influências ainda reverberam no mundo moderno. <br><br>
+                Além dos deuses, nosso blog também explora figuras místicas como Metatron, o arcanjo que conecta o divino e o terreno, e os significados ocultos por trás dos símbolos e mitos associados a essas personalidades. Através de análises detalhadas e narrativas enriquecedoras, buscamos iluminar as tradições esotéricas e as sabedorias antigas, permitindo que nossos leitores se conectem com as profundezas do conhecimento espiritual e descubram como esses relatos ancestrais continuam a moldar nossa compreensão do cosmos e de nós mesmos.</p>
+        </section>
+    </div>
+    <div class="container mt-3">
+        <section id="postagens">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <div class="card">
+                        <img src="./img/thoth.jpg" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Thoth</h5>
+                            <p class="card-text">Thoth é um deus Egípcio, deus da escrita e dos escribas, associada à sabedoria, escrita, magia e conhecimento.</p>
+                            <a href="#" class="btn btn-primary">Clique para saber mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <div class="card">
+                        <img src="./img/hermes.png" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Hermes Trismegistus</h5>
+                            <p class="card-text">Foi um sábio ou profeta que transmitiu conhecimentos esotéricos sobre a natureza do universo e a relação entre o divino e o humano. O nome "Trismegistus" significa "Três Vezes Grande" e reflete a sua reputação como um grande mestre da sabedoria.</p>
+                            <a href="#" class="btn btn-primary">Clique para saber mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3">
+                    <div class="card">
+                        <img src="./img/metatron.jpg" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Metatron</h5>
+                            <p class="card-text">Metatron é um arcanjo, associado ao papel de escriba celestial e guardião do livro da vida, além de ser considerado o intermediário entre o divino e a humanidade.</p>
+                            <a href="#" class="btn btn-primary">Clique para saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+    <section id="cadastro">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Formulário de cadastro</h2>
+                    <form>
+                        <label class="form-label" for="nome">Seu nome: </label>
+                        <input class="form-control" type="text" id="nome" required />
+                        <label for="email" class="form-label">Seu e-mail</label>
+                        <input type="email" id="email" class="form-control" placeholder="email@exemplo.com" required>
+                        <label for="tel" class="form-label">Telefone</label>
+                        <input type="tel" id="tel" class="form-control" placeholder="(xx) xxxx-xxxx">
+                        <label for="mensagem" class="form-label">Sua mensagem:</label>
+                        <textarea id="mensagem" class="form-control"></textarea>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                            <input class="form-check-input" type="checkbox" id="aceito-termos">
+                        </div>
+                        <button class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </section>
+</div>
+
+
+<footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+        <div class="copyright text-center ">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Lucas Chamorro</strong> <span>All Rights
+                    Reserved</span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
